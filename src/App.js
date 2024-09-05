@@ -1,13 +1,15 @@
 import Tittle from './componets/Tittle';
 import './App.css';
 import MainDisplay from './componets/MainDisplay';
+import AppProvider from './AppProvider';
 
- const App=()=> {
+const App = () => {
   return (
-    <div >
-        <Tittle/>
-        <MainDisplay/>
-    </div>
+    <AppProvider>
+      <Tittle />
+      <MainDisplay />
+    </AppProvider>
+
   );
 }
 
